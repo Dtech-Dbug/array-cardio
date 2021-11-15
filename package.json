@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Dtech-Dbug/array-cardio/issues"
   },
-  "homepage": "https://github.com/Dtech-Dbug/array-cardio#readme"
+  "homepage": "https://github.com/Dtech-Dbug/array-cardio#readme",
+  "dependencies": {
+    "jest": "^27.3.1"
+  }
 }
