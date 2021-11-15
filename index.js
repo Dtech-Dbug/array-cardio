@@ -1,4 +1,6 @@
 let arr = [1, 2, 3, 1, 2, 3];
+let arr1 = ["bony", "dtech-dbug", "dwaipayan"];
+let arr2 = ["bony", "dtech-dbug", "dwaipayan"];
 
 function unique(array) {
   let uniqueArray = [];
@@ -16,15 +18,6 @@ function unique(array) {
 
   return uniqueArray;
 }
-
-// console.log(unique(arr));
-
-let arr1 = ["bony", "dtech-dbug", "dwaipayan"];
-
-let arr2 = ["bony", "dtech-dbug", "dwaipayan"];
-
-// isStrictEqual(arr1, arr2);
-console.log(isStrictEqual(arr1, arr2));
 
 function isStrictEqual(array1, array2) {
   let result;
@@ -45,3 +38,32 @@ function isStrictEqual(array1, array2) {
 
   return result;
 }
+
+// *shift function
+// ! params : array , shiftIndices , shiftDirection [by default, set to left shift]
+// ? pass a string ->'right' in the function params for right shift
+
+const shift = (array, shiftIndices, shiftdirection) => {
+  // ? if shifTdirection is 'right' make a right shift of the indices specified
+  if (shiftdirection === "right") {
+    for (j = 0; j < shiftIndices; j++) {
+      for (i = array.length - 1; i < array.length; i++) {
+        var shiftedDigits = array.splice(i, 1);
+        array.unshift(shiftedDigits[0]);
+      }
+    }
+  }
+
+  // ? ele left shift , default
+  else {
+    for (j = 0; j < shiftIndices; j++) {
+      for (i = 0; i < 1; i++) {
+        var shiftedDigits = array.splice(i, 1);
+        array.push(shiftedDigits[0]);
+      }
+    }
+  }
+
+  return array;
+};
+console.log(shift(arr, 1));
