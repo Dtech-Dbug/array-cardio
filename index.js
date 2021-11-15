@@ -1,7 +1,3 @@
-let arr = [1, 2, 3, 1, 2, 3];
-let arr1 = ["bony", "dtech-dbug", "dwaipayan"];
-let arr2 = ["bony", "dtech-dbug", "dwaipayan"];
-
 function unique(array) {
   let uniqueArray = [];
   for (i in array) {
@@ -67,7 +63,6 @@ function shift(array, shiftIndices, shiftdirection) {
 
   return array;
 }
-// console.log(shift(arr2, 1, "right"));
 
 module.exports = {
   unique,
