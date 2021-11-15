@@ -39,16 +39,17 @@ function isStrictEqual(array1, array2) {
   return result;
 }
 
-// *shift function
-// ! params : array , shiftIndices , shiftDirection [by default, set to left shift]
-// ? pass a string ->'right' in the function params for right shift
-
 const shift = (array, shiftIndices, shiftdirection) => {
+  // *shift function
+  // ! params : array , shiftIndices , shiftDirection [by default, set to left shift]
+  // ? pass a string ->'right' in the function params for right shift
+
   // ? if shifTdirection is 'right' make a right shift of the indices specified
   if (shiftdirection === "right") {
     for (j = 0; j < shiftIndices; j++) {
       for (i = array.length - 1; i < array.length; i++) {
         var shiftedDigits = array.splice(i, 1);
+        console.log({ shiftedDigits });
         array.unshift(shiftedDigits[0]);
       }
     }
@@ -66,4 +67,4 @@ const shift = (array, shiftIndices, shiftdirection) => {
 
   return array;
 };
-console.log(shift(arr, 1));
+// console.log(shift(arr2, 1, "right"));
