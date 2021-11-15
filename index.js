@@ -39,7 +39,7 @@ function isStrictEqual(array1, array2) {
   return result;
 }
 
-const shift = (array, shiftIndices, shiftdirection) => {
+function shift(array, shiftIndices, shiftdirection) {
   // *shift function
   // ! params : array , shiftIndices , shiftDirection [by default, set to left shift]
   // ? pass a string ->'right' in the function params for right shift
@@ -66,5 +66,11 @@ const shift = (array, shiftIndices, shiftdirection) => {
   }
 
   return array;
-};
+}
 // console.log(shift(arr2, 1, "right"));
+
+module.exports = {
+  unique,
+  isStrictEqual,
+  shift,
+};
