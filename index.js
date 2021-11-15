@@ -48,7 +48,6 @@ function shift(array, shiftIndices, shiftdirection) {
     for (j = 0; j < shiftIndices; j++) {
       for (i = array.length - 1; i < array.length; i++) {
         var shiftedDigits = array.splice(i, 1);
-        console.log({ shiftedDigits });
         array.unshift(shiftedDigits[0]);
       }
     }
@@ -72,3 +71,4 @@ module.exports = {
   isStrictEqual,
   shift,
 };
+// console.log(shift([1, 2, 3, 1, 2, 3], 2, "right"));
