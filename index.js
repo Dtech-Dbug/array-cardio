@@ -18,6 +18,9 @@ function unique(array) {
 function isStrictEqual(array1, array2) {
   let result;
 
+  if (array1.length === 0 && array2.length === 0) {
+    result = false;
+  }
   // ? if arr.length not same they are unequal
   if (array1.length === array2.length) {
     // check items are same
