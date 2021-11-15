@@ -1,4 +1,4 @@
-const { unique, isStrictEqual, shiftS, shift } = require("./index");
+const { unique, isStrictEqual, shift } = require("./index");
 
 let arr = [1, 2, 3, 1, 2, 3];
 let arr4 = [1, 2, 3, 1, 2, 3];
@@ -73,5 +73,3 @@ test("should array be rotated to right by 1", () => {
     "dtech-dbug",
   ]);
 });
-
-// TODO : integration
