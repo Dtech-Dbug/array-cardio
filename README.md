@@ -51,3 +51,9 @@ let arr2 = [[1, 2], "foo", "bar", "baz"]
 console.log(isStrictEqual(arr1, arr2 ))
 // true
 ```
+
+## shift
+```js
+console.log(shift([1, 2, 3, 1, 2, 3], 2, "right"));
+// console.log(shift([1, 2, 3, 1, 2, 3], 2, "right"));
+```

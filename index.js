@@ -71,9 +71,4 @@ module.exports = {
   isStrictEqual,
   shift,
 };
-// console.log(shift([1, 2, 3, 1, 2, 3], 2, "right"));
-
-let arr1 = [[1, 2], "foo", "bar", "baz"]
-let arr2 = [[1, 2], "foo", "bar", "baz"]
-
-console.log(isStrictEqual(arr1, arr2 ))
+console.log(shift([1, 2, 3, 1, 2, 3], 2, "right"));
