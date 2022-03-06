@@ -71,4 +71,4 @@ module.exports = {
   isStrictEqual,
   shift,
 };
-console.log(shift([1, 2, 3, 1, 2, 3], 2, "right"));
+
