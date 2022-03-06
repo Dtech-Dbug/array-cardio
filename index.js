@@ -38,13 +38,13 @@ function isStrictEqual(array1, array2) {
   return result;
 }
 
-function shift(array, shiftIndices, shiftdirection) {
+function shift(array, shiftIndices, shiftDirection) {
   // *shift function
   // ! params : array , shiftIndices , shiftDirection [by default, set to left shift]
   // ? pass a string ->'right' in the function params for right shift
 
-  // ? if shifTdirection is 'right' make a right shift of the indices specified
-  if (shiftdirection === "right") {
+  // ? if shiftDirection is 'right' make a right shift of the indices specified
+  if (shiftDirection === "right") {
     for (j = 0; j < shiftIndices; j++) {
       for (i = array.length - 1; i < array.length; i++) {
         var shiftedDigits = array.splice(i, 1);
@@ -53,7 +53,7 @@ function shift(array, shiftIndices, shiftdirection) {
     }
   }
 
-  // ? ele left shift , default
+  // ? else left shift , default
   else {
     for (j = 0; j < shiftIndices; j++) {
       for (i = 0; i < 1; i++) {
@@ -72,3 +72,8 @@ module.exports = {
   shift,
 };
 // console.log(shift([1, 2, 3, 1, 2, 3], 2, "right"));
+
+let arr1 = [[1, 2], "foo", "bar", "baz"]
+let arr2 = [[1, 2], "foo", "bar", "baz"]
+
+console.log(isStrictEqual(arr1, arr2 ))
